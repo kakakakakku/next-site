@@ -19,7 +19,7 @@ function DocsPage({ path, html }) {
       {/* eslint-disable-next-line */}
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
-      <Feedback />
+      <Feedback label="next-docs" />
       <footer>
         <a href={editUrl} target="_blank" rel="noopener noreferrer">
           Edit this page on GitHub

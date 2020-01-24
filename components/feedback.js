@@ -80,6 +80,7 @@ export default class Feedback extends Component {
           url: window.location.toString(),
           note: this.textAreaRef ? this.textAreaRef.value : '',
           emotion: getEmoji(this.state.emoji),
+          label: this.props.label,
           ua: `${this.props.uaPrefix || ''} + ${navigator.userAgent} (${navigator.language ||
             'unknown language'})`
         })

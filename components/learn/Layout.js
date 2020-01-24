@@ -35,7 +35,7 @@ const Layout = ({ meta, children }) => (
                         <Markdown>{children}</Markdown>
                       </Lesson>
                       <hr />
-                      <Feedback />
+                      <Feedback label="next-learn" />
                     </div>
                   </RecordsProvider>
                 </div>
