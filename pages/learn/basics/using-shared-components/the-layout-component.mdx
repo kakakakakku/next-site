@@ -24,22 +24,22 @@ In our app, we'll use a common style across various pages. For this purpose, we 
 Add this content to `components/MyLayout.js`:
 
 ```jsx
-import Header from './Header';
+import Header from './Header'
 
 const layoutStyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
-};
+}
 
-const Layout = props => (
-  <div style={layoutStyle}>
-    <Header />
-    {props.children}
-  </div>
-);
-
-export default Layout;
+export default function Layout(props) {
+  return (
+    <div style={layoutStyle}>
+      <Header />
+      {props.children}
+    </div>
+  )
+}
 ```
 
 Once we've done that, we can use this Layout in our pages as follows:
